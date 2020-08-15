@@ -9,7 +9,7 @@ It was a snowy night in Edmonton, the clock was ticking past 1 am, and I was bus
 
 
 <div style="display: flex; justify-content: center;">
-<img align="center" class="center" src="/assets/Blog_1_Fig_1.png" alt="" width="750">
+<img align="center" class="center" src="/assets/Blog_1_Fig_1.png" alt="Screenshot of a window on my laptop" width="750">
 </div>
 <p class="img-caption">Screenshot of a window on my laptop.</p>
 
@@ -17,22 +17,22 @@ I had started making changes to the file 'Source_Code.py'. In the process of mod
 
 If you have ever experienced this in your grad/work life, worry not! I’d like to introduce you to Version Control using [Git][Git-link]. [Git][Git-link] is an open-source version control tool widely used by software developers for tracking the history of changes made locally to a file. It connects to [Github][Github-link], a cloud-based service that allows you to take the work that you did offline in a [Git][Git-link] repository into an online space, where you can work collaboratively as a team. 
 
-To understand the workings of [Git][Git-link] and [Github][Github-link], let’s consider a software company consisting of three developers who are trying to add a feature to an existing product. Each developer has a [Git][Git-link] project repository in their local machine, and part of a central repository in [Github][Github-link] to work collaboratively (as described in figure 1). It is easier to understand the workflow in [Git][Git-link]/[Github][Github-link] using a tree analogy. The Master branch in [Github][Github-link] is analogous to the trunk of the tree, and there are different branches from the Master that represent different versions/tasks.
+To understand the workings of [Git][Git-link] and [Github][Github-link], let’s consider a software company consisting of three developers who are trying to add extra features to an existing product. Each developer has a [Git][Git-link] project repository in their local machine, and part of a central repository in [Github][Github-link] to work collaboratively (as described in figure 1). It is easier to understand the workflow in [Git][Git-link]/[Github][Github-link] using a tree analogy. The Master branch in [Github][Github-link] is analogous to the trunk of the tree, and there are different branches from the Master that represent different versions/tasks.
 
 
 <div style="display: flex; justify-content: center;">
-<img align="center" class="center" src="/assets/Blog_1_Fig_2.png" alt="" width="800px">
+<img align="center" class="center" src="/assets/Blog_1_Fig_2.png" alt="Figure 1: Schematic representation of how Git/Github works." width="800px">
 </div>
 <p class="img-caption">Figure 1: Schematic representation of how Git/Github works.</p>
 
-As described in the figure, at the start of the project, Developer - 1 and Developer - 2 work independently on their allotted tasks by branching out from the Master. Developer - 2 works fast and finishes the given task. He then merges the completed work back with the Master branch. Developer - 3 then takes over by creating a new branch. During that process, they also fetch the work completed by Developer - 1. The real advantage of [Git][Git-link]/[Github][Github-link] is that, even if Developer - 3 decides to experiment with the code in the branch they created, there is alwasy a working copy sitting in the Master branch that they can go back to. Each marker in figure 1 represents the changes made to the code (in [Git][Git-link] terminology, they are called ‘commits’). A typical commit has a unique ‘commit id’, along with information about its name and the time the particular change was made. With this unique commit id, it’s possible to go back and forth with the code. This is represented in figure-2. Note: we are not creating new copies here, but are just travelling back and forth between the versions of the same piece of code. 
+As described in the figure, at the start of the project, Developer - 1 and Developer - 2 work independently on their allotted tasks by branching out from the Master. Developer - 2 works fast and finishes the given task, and then merges the completed work back with the Master branch. Developer - 3 then takes over by creating a new branch. During that process, they also fetch the work completed by Developer - 1. The real advantage of [Git][Git-link]/[Github][Github-link] is that, even if Developer - 3 decides to experiment with the code in the branch they created, there is alwasy a working copy sitting in the Master branch that they can go back to. Each marker in figure 1 and figure 2 represents the changes made to the code (in [Git][Git-link] terminology, they are called ‘commits’). A typical commit has a unique ‘commit id’, along with information about its name and the time the particular change was made. With this unique commit id, it’s possible to go back and forth with the code. This process is described in figure-2. Note: we are not creating new copies here, but are just travelling back and forth between the versions of the same piece of code. 
 
 <div style="display: flex; justify-content: center;">
-<img align="center" class="center" src="/assets/Blog_1_Fig_3.png" alt="" width="400px">
+<img align="center" class="center" src="/assets/Blog_1_Fig_3.png" alt="Figure 2: Schematic of the commit logs in Git/Github." width="400px">
 </div>
-<p class="img-caption">Figure 2: Schematic of the commit logs in Git.</p>
+<p class="img-caption">Figure 2: Schematic of the commit logs in Git/Github.</p>
 
-While this collaborative workflow using [Git][Git-link]/[Github][Github-link] is the most common practice in the field of IT, it’s not so common among the engineers working on modelling and simulations. Also, with increasing use of advanced AI and ML in the field of engineering, you’re seeing more engineers spending hours writing long lines of code, but not necessarily adopting version control using Git. So, this blog is an attempt to fill that gap and introduce non-IT experts to the concept of [Git][Git-link]/[Github][Github-link]. I will follow up in future blogs with some introductory tutorials to get started with the same. 
+While this collaborative workflow using [Git][Git-link]/[Github][Github-link] is the most common practice in the field of IT, it’s not so common among the engineers working on modelling and simulations. Also, with increasing use of advanced AI and ML in the field of engineering, you’re seeing more engineers spending hours writing long lines of code, but not necessarily adopting version control using [Git][Git-link]. So, this blog is an attempt to fill that gap and introduce non-IT experts to the concept of [Git][Git-link]/[Github][Github-link]. I will follow up in future blogs with some introductory tutorials to get started with the [Git][Git-link]/[Github][Github-link]. 
 
 Stay tuned! 
 
