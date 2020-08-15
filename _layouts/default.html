@@ -110,6 +110,13 @@
         </ul>
       </nav>
       {%- endif -%}
+      <nav>
+        <ul>
+          <li class="custom-menu"><a href="/about/">About Me</a></li>
+          <li class="custom-menu"><a href="{{ "/" | relative_url}}">My Blog</a></li>
+          <li class="custom-menu"><a href="/contact/">Contact Me</a></li>
+        </ul>    
+    </nav>
       <p>&copy;
         {{ "now" | date: "%Y" }}</p>
       {%- if site.plainwhite.dark_mode -%}
