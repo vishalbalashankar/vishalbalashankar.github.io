@@ -11,3 +11,7 @@
   @import "toggle";
   @import "dark";
 {%- endif -%}
+
+#profile-image {
+  border-radius: 100px;
+}
