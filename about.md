@@ -14,7 +14,7 @@ I completed my Master’s in Chemical Engineering (thesis-based) in Jan. 2019 an
 
 With a background in engineering and my current work experience in data science, I am naturally fascinated towards engineering data-driven solutions to make human lives simpler, happier and healthier. Join me in my blog (which I am very excited about) to explore some of my learnings from my experiences in the field of engineering and data science. 
 
-Please feel free to reach out directly to me if you have any comments/questions.
+Please feel free to reach out to me if you have any comments/questions.
 
 Cheers, 
 Vishal

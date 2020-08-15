@@ -3,7 +3,8 @@ layout: page
 title: Contact
 permalink: /contact/
 ---
-Say Hi to me! 
+Let's talk!
+
 <form accept-charset="UTF-8" action="https://getform.io/f/ce89f7e2-f81f-416a-8142-79a5e7f82552" method="POST" enctype="multipart/form-data" target="_blank">
   <div class="form-group">
     <label for="exampleInputEmail1" required="required">Email</label>
