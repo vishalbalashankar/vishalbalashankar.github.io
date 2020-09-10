@@ -7,15 +7,15 @@ categories: Git Github
 
 My first blog post laid out a platform introducing you to the [Git][Git-link]/[Github][Github-link], and urged the need for version control while managing technical projects. Now, I am going to take you a step further and present you with some of the popular [Git][Git-link] commands to make your workflow easier. While it might be a bit intimidating to start using [Git][Git-link]/[Github][Github-link] at first for those with a limited programming background, I have made every attempt to make this tutorial easier to follow, ably complemented with visuals.
 
-As a part of this tutorial, let’s assume that we are trying to come up with an outline of a 'manuscript' after all our hard work working successfully on a project (happiest moment of any graduate student..). For simplicity, I have demonstrated the version control in a text file using [Git][Git-link]. However, this could be easily extended to any file type/script that you are working on. This tutorial also assumes you have some experience working with the Command Line Interface (CLI).
- 
+As a part of this tutorial, let’s assume that we are trying to come up with an outline of a technical report after all our hard work working successfully on a project. For simplicity, I have demonstrated the version control in a text file using [Git][Git-link]. However, this could be easily extended to any file type/script that you are working on. This tutorial also assumes you have some experience working with the Command Line Interface (CLI). 
+
 Okay, let's jump right into the tutorial now!! 
 
 ### 1. Install Git
 <div style="display: flex; justify-content: center;">
 <img align="center" class="center" src="/assets/Blog_2_Fig_1.png" alt="Git local repository on my laptop" width="150">
 </div>
-First, we will start by installing [Git][Git-link] on our computer. Please refer to the [Git documentation][Git-install] for detailed instructions based on Linux, macOS and Windows users. To check if we have installed [Git][Git-link] correctly in our computer, let’s open up a new terminal and type the following command to check the version of the [Git][Git-link] installed.
+First, we will start by installing [Git][Git-link] on our computer. Please refer to the [Git documentation][Git-install] for detailed instructions based on Linux, macOS and Windows users. For windows users, I recommend using [Git Bash][Gitbash-link] which provides a terminal [Git][Git-link] command experience. To check if we have installed [Git][Git-link] correctly in our computer, let’s open up a new terminal and type the following command to check the version of the [Git][Git-link] installed.
 
 ```
 git --version
@@ -29,8 +29,8 @@ git version 2.27.0
 Let’s now go ahead and set the username and email address that you would like to associate with your [Git][Git-link] account.
 
 ```
-git config --global user.email "Your valid email"
-git config --global user.name "Your name"
+git config --global user.email 'your valid email'
+git config --global user.name 'your name'
 ```
 
 ### 2. Create a folder and initialize an empty repository
@@ -44,8 +44,7 @@ cd project
 ```
 
 "But wait..how do I let [Git][Git-link] know to track my <em>project</em> folder??"  
-
-"Great question, we do it by the following command..."
+\- Great question, we do it by the following command...
 
 ```
 git init
@@ -56,12 +55,12 @@ This would initialize an empty [Git][Git-link] repository at the <em>project</em
 
 ### 3. Add and commit a file to our repository
 
-Let's now create the manuscript outline in a text file inside the <em>project</em> repository. Go back to the terminal that we were working on, and create a new file called <em>outline.txt</em>.
+Let's now create the report outline in a .txt file inside the <em>project</em> repository. Go back to the terminal that we were working on, and create a new file called <em>outline.txt</em>.
 
 ```
 nano outline.txt
 ```
-This will open up the GNU nano and add the basic layout as follows:  
+This will open up the GNU nano and add the basic layout as follows, and save it and exit out of the text editor.   
 
 ```
 Title
@@ -80,7 +79,7 @@ Before we ask [Git][Git-link] to start tracking the file that we just created, w
 git add outline.txt
 ```
 
-Now, let's record the changes that we did on `outline.txt` and commit it to our local repository by: 
+Now, let's record the changes that we did on `outline.txt`. [Git][Git-link] has a magic command called `commit` which takes the snapshot of the repository at any point in time. It is achieved by the following command. 
 
 ```
 git commit -m 'Basic Outline'
@@ -92,15 +91,15 @@ git commit -m 'Basic Outline'
  create mode 100644 outline.txt
 ```
 
-It is important to note here that the default branch in the <em>Git</em> repository is called as <em>master</em>.
+
 ### 4. Let's do one more commit
 
-We will now make some more changes to the file <em>outline.txt</em> and add a little detailed version of the outline as follows. 
+We will now make some more changes to the file <em>outline.txt</em> and add a little detailed version of the outline as follows. Let's open the <em>outline.txt</em> again from the terminal,
 
 ```
 nano outline.txt
 ```
-And add the following changes or any modifications that you would like to do. 
+And make the following changes or any modifications that you would like to do and save and close the editor. 
 
 ```
 Title
@@ -116,11 +115,11 @@ Abstract
 8. Appendix
 ```
 
-Before adding the file to the staging area and subsequently commiting it, let's now try running a new command:  
+Before adding the file to the <em>staging area</em> and subsequently commiting it, let's now try running a new command:  
 ```
 git status
 ```
-This shows a message that the file that we were working on, was modified.
+This shows a message that the file <em>outline.txt</em> was modified.
 ```
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -131,7 +130,7 @@ Changes not staged for commit:
 As before, let's first add the file to the staging area and then commit it. 
 
 ```
-git add Outline.txt
+git add outline.txt
 git commit -m 'Added Detailed Layout'
 ```
 The moment you commit it, the [Git][Git-link] shows the no. of changes that you made to the file from the previous version. 
@@ -165,16 +164,12 @@ Date:   Sun Sep 6 17:14:42 2020 -0600
 ```
 Each block above has a unique commit id, the author and the date & time followed by the commit message.
 
-For more fancier versions of viewing commit history, try
-```
-git log --oneline
-```
-
-To visit a particular change that we did from the log above, we could just visit it by the using the commit id.
+To visit a particular version of the <em>outline.txt</em> file that we did from the log above, we could just visit it by the using the corresponding commit id.
 
 ```
 git checkout 437b001da21db7732f1bf7a75b241c9ae8e06168
 ```
+Note: The above commit id would be different based on the user.  
 
 To go back to the latest version in master, 
 ```
@@ -183,7 +178,7 @@ git checkout master
 
 ### 6. Brainstorm for new outline
 
-Now, the scientists in us kick in, and we want to go on an exploration mode.  Ideally, we don't want to mess up the clean version that we already have in <em>master</em>.  Worry not, [Git][Git-link] has a solution. Let's branch out from the latest version in <em>master</em> and create a new branch called <em>brainstorm</em> and make any changes that you wish to make.   
+Now, the scientists in us kick in, and we want to go on an exploration mode.  Ideally, we don't want to mess up the clean version that we already have in <em>master</em>.  Let's branch out from the latest version in <em>master</em> and create a new branch called <em>brainstorm</em> and make any changes that you wish to make.   
 
 ```javascript
 git branch brainstorm
@@ -199,7 +194,7 @@ Let's do our changes as before by opening the file.,
 ```
 nano outline.txt
 ```
-And do all the changes that you are interested in. After making necessary changes, let's add the file to the staging area and commit it again. 
+And do all the changes that you are interested in, save and exit out of the editor. Let's add the file to the <em>staging area</em> and commit it again. 
 
 ```
 git add outline.txt
@@ -207,31 +202,32 @@ git commit -m 'Brainstorm version'
 ```
 
 ### 7. Two options ahead of us
-<div style="display: flex; justify-content: center;">
-<img align="center" class="center" src="/assets/Blog_2_Fig_3.png" alt="Schematic diagram" width="350">
-</div>
-We have two options clearly before us now: 
+We have two options before us now after experimenting with the <em>brainstorm</em> branch: 
 
-1. We really like the changes that we did in the <em>brainstorm</em> branch and want to merge it with master. 
+<b>Option 1:</b> We very much like the changes that we did in the <em>brainstorm</em> branch and want to merge it back with our default branch <em>master</em>.   
 ```
 git checkout master
 git merge brainstorm
-nano outline.txt
 ```
 
-2. If we don't like the changes that we made in the <em>brainstorm</em> branch, we could simply switch back to 'master'. 
+<b>Option 2:</b> If we don't like the changes that we made in the <em>brainstorm</em> branch, we could simply switch back to 'master'. 
 ```
 git checkout master
 ```
-This way we are going back to the previous version without taking any modifications that we did. 
+This way we are going back to the previous version without taking any modifications that we did in <em>brainstorm</em> branch. 
 To delete the <em>brainstorm</em> branch,
 ```
 git branch -d brainstorm
 ```
 
+<div style="display: flex; justify-content: center;">
+<img align="center" class="center" src="/assets/Blog_2_Fig_3.png" alt="Schematic diagram" width="350">
+</div>
+
+
 ### 8. Hosting it in Github
 
-So far, we managed all our workflow in a [Git][Git-link] repository within a local machine. To work on a collaborative project with other users, it is important now to take the work that we did and host it in [Github][Github-link]. In my next blog post, I will take you through how to translate this work to the Github. With more people working on a project, conflicts bound to occur, I will also be presenting ways to manage merge conflicts using [Git][Git-link].
+So far, we managed all our workflow in a [Git][Git-link] repository within a local machine. To work on a collaborative project with other users, it is important now to take the work that we did and host it in [Github][Github-link]. In my next blog post, I will take you through how to translate this work to the Github. With more people working on a project, conflicts bound to occur. I will also be presenting ways to manage merge conflicts using [Git][Git-link].
 
 Stay tuned. Do reach out to me, if you have any comments about this tutorial.  
 
@@ -240,7 +236,7 @@ Stay tuned. Do reach out to me, if you have any comments about this tutorial.
 [Git-link]: https://git-scm.com/
 [Github-link]: https://github.com/
 [Git-install]:  https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
-
+[Gitbash-link]: https://gitforwindows.org/
 
 
 
