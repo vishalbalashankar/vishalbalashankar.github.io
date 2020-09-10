@@ -7,7 +7,7 @@ categories: Git Github
 
 My first blog post laid out a platform introducing you to the [Git][Git-link]/[Github][Github-link], and urged the need for version control while managing technical projects. Now, I am going to take you a step further and present you with some of the popular [Git][Git-link] commands to make your workflow easier. While it might be a bit intimidating to start using [Git][Git-link]/[Github][Github-link] at first for those with a limited programming background, I have made every attempt to make this tutorial easier to follow, ably complemented with visuals.
 
-As a part of this tutorial, let’s assume that we are trying to come up with an outline of a technical report after all our hard work working successfully on a project. For simplicity, I have demonstrated the version control in a text file using [Git][Git-link]. However, this could be easily extended to any file type/script that you are working on. This tutorial also assumes you have some experience working with the Command Line Interface (CLI). 
+As a part of this tutorial, let’s assume that we are trying to come up with an outline of a technical report after successfully finishing a project. For simplicity, I have demonstrated the version control in a text file using [Git][Git-link]. However, this could be easily extended to any file type/script that you are working on. This tutorial also assumes you have some experience working with the Command Line Interface (CLI). 
 
 Okay, let's jump right into the tutorial now!! 
 
@@ -133,7 +133,7 @@ As before, let's first add the file to the staging area and then commit it.
 git add outline.txt
 git commit -m 'Added Detailed Layout'
 ```
-The moment you commit it, the [Git][Git-link] shows the no. of changes that you made to the file from the previous version. 
+The moment you commit it, the [Git][Git-link] shows the number of changes that you made to the file from the previous version. 
 
 ```
  1 file changed, 6 insertions(+), 2 deletions(-)
@@ -229,7 +229,7 @@ git branch -d brainstorm
 
 So far, we managed all our workflow in a [Git][Git-link] repository within a local machine. To work on a collaborative project with other users, it is important now to take the work that we did and host it in [Github][Github-link]. In my next blog post, I will take you through how to translate this work to the Github. With more people working on a project, conflicts bound to occur. I will also be presenting ways to manage merge conflicts using [Git][Git-link].
 
-Stay tuned. Do reach out to me, if you have any comments about this tutorial.  
+Stay tuned! Please do [contact me][contact], if you have any comments or suggestions about this tutorial.  
 
 
 
@@ -237,7 +237,7 @@ Stay tuned. Do reach out to me, if you have any comments about this tutorial.
 [Github-link]: https://github.com/
 [Git-install]:  https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 [Gitbash-link]: https://gitforwindows.org/
-
+[contact]: https://vishalsubramanian.com/contact/ 
 
 
 
