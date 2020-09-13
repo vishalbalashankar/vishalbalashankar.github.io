@@ -2,7 +2,7 @@ title: Vishal Subramanian
 author: GitHub User
 email: your-email@domain.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  Thank you for dropping by my blog. My name is Vishal. Join me in my blog (which I am very excited about) to explore some of my learnings from my experiences in the field of engineering and data science.
+  Join me in my blog to explore some of my learnings from my experiences in the field of engineering and data science.
   show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
