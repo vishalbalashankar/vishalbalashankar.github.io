@@ -229,7 +229,7 @@ git branch -d brainstorm
 
 So far, we managed all our workflow in a [Git][Git-link] repository within a local machine. To work on a collaborative project with other users, it is important now to take the work that we did and host it in [Github][Github-link]. In my next blog post, I will take you through how to translate this work to the Github. With more people working on a project, conflicts bound to occur. I will also be presenting ways to manage merge conflicts using [Git][Git-link].
 
-Stay tuned! Please do [contact me][contact], if you have any comments or suggestions about this tutorial.  
+Stay tuned! Please do contact me, if you have any comments or suggestions about this tutorial.  
 
 
 
